@@ -4,16 +4,17 @@ import "../component/companies.css"
 import Services from "./Services"
 
 import Programmers from './Programmers'
-function Companies({name, emp, year}) {
+function Companies({name, emp, year, num}) {
   return (
     <div className='main'>
         <div className='firstDiv'>
             <p style={{fontSize:"1.5em"}}>Compnay Name: {name}</p>
+            <p>Worker Number: {num}</p>
             <p>Year of Founded: {year}</p>
 
             <Services services={"programming"} price={10000}/>
 
-
+            <h2>Employers:</h2>
 
             <div className='cards' >
           
@@ -21,7 +22,7 @@ function Companies({name, emp, year}) {
               <Programmers 
                 name={emp.names}
                 prog={emp.ProgrammingLanguages}
-                years={emp.Experience}
+                years={emp.years}
                 company={emp.Company}
                 className="card1"
             />
