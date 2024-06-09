@@ -1,0 +1,14 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    width: 100%;
+    background-color: beige;
+    
+}
+.firsrDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
